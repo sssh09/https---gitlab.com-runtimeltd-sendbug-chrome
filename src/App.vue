@@ -1,17 +1,25 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <router-view></router-view>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+// eslint-disable-next-line
+import Header2 from './layout/Header2.vue'
+import Section2 from './layout/Section2.vue'
+import Switch2 from './components/Switch2.vue'
+import Section3 from './layout/Section3.vue'
+import Media from './views/Media.vue'
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    Header2,
+    Section2,
+    Switch2,
+    Section3,
+    Media
   }
 }
 </script>
